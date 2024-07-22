@@ -7,7 +7,7 @@ hero:
   text: "再渺小的星光，也有属于它的光芒！"
   tagline: 一个逐渐强大的全栈工程师
   image:
-    src: ./.vitepress/images/avatar.jpg
+    src: /.vitepress/images/avatar.jpg
     alt: VitePress
   actions:
     - theme: brand
