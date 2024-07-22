@@ -1,0 +1,66 @@
+:root {
+    --vp-home-hero-name-color: #727cf5;
+}
+
+.container {
+    // 名称
+    .name {
+        .clip {
+            background: -webkit-gradient(linear,0 0,0 bottom,from(#8f75da),to(#727cf5));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    // 头像
+    .image-container {
+        .image-bg {
+            filter: blur(68px);
+            background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+        }
+
+        .VPImage {
+            top: 0;
+            left: 20%;
+            box-shadow: 0 2px 8px #727cf520;
+            animation: 5s linear infinite miniShape;
+        }
+    }
+}
+
+// 适配
+@media (max-width: 960px) {
+    .container {
+        .image-container {
+            .VPImage {
+                top: 14%;
+                left: 20%;
+            }
+        }
+    }
+}
+
+// 头像动画效果
+@keyframes miniShape {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(.01deg);
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54%/30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(.01deg);
+    }
+
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(.01deg);
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(.01deg);
+    }
+}
