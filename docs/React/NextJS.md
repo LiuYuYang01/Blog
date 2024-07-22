@@ -95,7 +95,7 @@ const router = useRouter()
 
 
 
-**示例：** http://localhost:3000/cate/100?name=jack
+**示例：** `http://localhost:3000/cate/100?name=jack`
 
 ```react
 const Cate = ({ params, searchParams }) => {
