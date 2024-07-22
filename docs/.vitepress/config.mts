@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/repo/",
   title: "宇阳 - 记录开发日常",
   description: "再渺小的星光，也有属于它的光芒！",
   themeConfig: {
